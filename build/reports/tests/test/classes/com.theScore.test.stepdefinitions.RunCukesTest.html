@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.theScore.test.stepdefinitions.RunCukesTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.theScore.test.stepdefinitions.RunCukesTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.theScore.test.stepdefinitions.html">com.theScore.test.stepdefinitions</a> &gt; RunCukesTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">0</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">-</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">-</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Feature: Verify selection of league,team and verify details screen
+
+  Scenario Outline: User chooses a league and verify league details ?[90m# LeagueTest.feature:6?[0m
+    ?[36mThen ?[0m?[36mVerify that league &quot;&lt;league&gt;&quot; is displayed?[0m
+    ?[36mAnd ?[0m?[36mUser clicks on &quot;&lt;league&gt;&quot; league?[0m
+    ?[36mAnd ?[0m?[36mUser clicks on continue?[0m
+    ?[36mAnd ?[0m?[36mVerify that team &quot;&lt;team&gt;&quot; is displayed?[0m
+    ?[36mThen ?[0m?[36mUser clicks on &quot;&lt;team&gt;&quot; team?[0m
+    ?[36mAnd ?[0m?[36mUser clicks on continue on choose team?[0m
+    ?[36mThen ?[0m?[36mUser should be on favourites tab on home screen?[0m
+    ?[36mAnd ?[0m?[36mUser should see label &quot;&lt;label&gt;&quot; is present?[0m
+    ?[36mAnd ?[0m?[36mUser clicks on &quot;&lt;label&gt;&quot; label?[0m
+    ?[36mAnd ?[0m?[36mUser should see title &quot;&lt;league&gt;&quot; as expected?[0m
+    ?[36mThen ?[0m?[36mUser clicks on standings tab?[0m
+    ?[36mAnd ?[0m?[36mUser should see that standings tab is selected?[0m
+    ?[36mAnd ?[0m?[36mUser should see that team &quot;&lt;team&gt;&quot; standings is displayed?[0m
+    ?[36mThen ?[0m?[36mUser clicks back button from standings?[0m
+    ?[36mAnd ?[0m?[36mUser should see label &quot;&lt;label&gt;&quot; is present?[0m
+    ?[36mAnd ?[0m?[36mUser should see search bar?[0m
+
+    Examples: 
+
+  Background: User clicks on Get started   ?[90m# LeagueTest.feature:3?[0m
+    ?[32mWhen ?[0m?[32mUser clicks on get started button?[0m ?[90m# LandingScreenStepDefs.user_clicks_on_get_started_button()?[0m
+
+  Scenario Outline: User chooses a league and verify league details           ?[90m# LeagueTest.feature:25?[0m
+    ?[32mThen ?[0m?[32mVerify that league &quot;?[0m?[32m?[1mNHL Hockey?[0m?[32m&quot; is displayed?[0m                         ?[90m# ChooseLeagueScreenStepDefs.verify_league_is_displayed(String)?[0m
+    ?[32mAnd ?[0m?[32mUser clicks on &quot;?[0m?[32m?[1mNHL Hockey?[0m?[32m&quot; league?[0m                                    ?[90m# ChooseLeagueScreenStepDefs.user_clicks_on_league(String)?[0m
+    ?[32mAnd ?[0m?[32mUser clicks on continue?[0m                                               ?[90m# ChooseLeagueScreenStepDefs.user_clicks_on_continue()?[0m
+    ?[32mAnd ?[0m?[32mVerify that team &quot;?[0m?[32m?[1mMontreal Canadiens?[0m?[32m&quot; is displayed?[0m                    ?[90m# ChooseTeamScreenStepDefs.verify_team_is_displayed(String)?[0m
+    ?[32mThen ?[0m?[32mUser clicks on &quot;?[0m?[32m?[1mMontreal Canadiens?[0m?[32m&quot; team?[0m                             ?[90m# ChooseTeamScreenStepDefs.user_clicks_on_team(String)?[0m
+    ?[32mAnd ?[0m?[32mUser clicks on continue on choose team?[0m                                ?[90m# ChooseTeamScreenStepDefs.user_clicks_on_continue_on_choose_team()?[0m
+    ?[32mThen ?[0m?[32mUser should be on favourites tab on home screen?[0m                      ?[90m# HomeScreenStepDefs.user_should_be_on_favourites_tab_n_home_screen()?[0m
+    ?[32mAnd ?[0m?[32mUser should see label &quot;?[0m?[32m?[1mNHL?[0m?[32m&quot; is present?[0m                                ?[90m# HomeScreenStepDefs.user_should_see_label_is_present(String)?[0m
+    ?[32mAnd ?[0m?[32mUser clicks on &quot;?[0m?[32m?[1mNHL?[0m?[32m&quot; label?[0m                                            ?[90m# HomeScreenStepDefs.user_clicks_on_label(String)?[0m
+    ?[32mAnd ?[0m?[32mUser should see title &quot;?[0m?[32m?[1mNHL Hockey?[0m?[32m&quot; as expected?[0m                        ?[90m# LeagueDetailsScreenStepDefs.user_should_see_title_as_expected(String)?[0m
+    ?[32mThen ?[0m?[32mUser clicks on standings tab?[0m                                         ?[90m# LeagueDetailsScreenStepDefs.user_clicks_on_standings_tab()?[0m
+    ?[32mAnd ?[0m?[32mUser should see that standings tab is selected?[0m                        ?[90m# LeagueDetailsScreenStepDefs$StandingsScreenStepDefs.user_should_see_that_standings_tab_is_selected()?[0m
+    ?[32mAnd ?[0m?[32mUser should see that team &quot;?[0m?[32m?[1mMontreal Canadiens?[0m?[32m&quot; standings is displayed?[0m ?[90m# LeagueDetailsScreenStepDefs$StandingsScreenStepDefs.user_should_see_that_team_standings_is_displayed(String)?[0m
+    ?[32mThen ?[0m?[32mUser clicks back button from standings?[0m                               ?[90m# LeagueDetailsScreenStepDefs$StandingsScreenStepDefs.user_clicks_back_button_from_standings()?[0m
+    ?[32mAnd ?[0m?[32mUser should see label &quot;?[0m?[32m?[1mNHL?[0m?[32m&quot; is present?[0m                                ?[90m# HomeScreenStepDefs.user_should_see_label_is_present(String)?[0m
+    ?[32mAnd ?[0m?[32mUser should see search bar?[0m                                            ?[90m# HomeScreenStepDefs.user_should_see_search_bar()?[0m
+
+1 Scenarios (?[32m1 passed?[0m)
+17 Steps (?[32m17 passed?[0m)
+0m51.104s
+
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 10-Aug-2021 11:08:50</p>
+</div>
+</div>
+</body>
+</html>

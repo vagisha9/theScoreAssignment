@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>root project 'theScoreTests'</td>
+      <td>10 Aug 2021, 11:08</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">ChooseLeagueScreenStepDefs.user_clicks_on_continue()</td>
+              <td>1</td>
+              <td class="duration" data-value="2695635300">2.695</td>
+              <td class="duration" data-value="2695635300">2.695</td>
+              <td class="duration" data-value="2695635300">2.695</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">ChooseLeagueScreenStepDefs.user_clicks_on_league(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="460057000">0.460</td>
+              <td class="duration" data-value="460057000">0.460</td>
+              <td class="duration" data-value="460057000">0.460</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">ChooseLeagueScreenStepDefs.verify_league_is_displayed(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2183408100">2.183</td>
+              <td class="duration" data-value="2183408100">2.183</td>
+              <td class="duration" data-value="2183408100">2.183</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">ChooseTeamScreenStepDefs.user_clicks_on_continue_on_choose_team()</td>
+              <td>1</td>
+              <td class="duration" data-value="2529465300">2.529</td>
+              <td class="duration" data-value="2529465300">2.529</td>
+              <td class="duration" data-value="2529465300">2.529</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">ChooseTeamScreenStepDefs.user_clicks_on_team(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="356264900">0.356</td>
+              <td class="duration" data-value="356264900">0.356</td>
+              <td class="duration" data-value="356264900">0.356</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">ChooseTeamScreenStepDefs.verify_team_is_displayed(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="310266700">0.310</td>
+              <td class="duration" data-value="310266700">0.310</td>
+              <td class="duration" data-value="310266700">0.310</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HomeScreenStepDefs.user_clicks_on_label(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="316480000">0.316</td>
+              <td class="duration" data-value="316480000">0.316</td>
+              <td class="duration" data-value="316480000">0.316</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HomeScreenStepDefs.user_should_be_on_favourites_tab_n_home_screen()</td>
+              <td>1</td>
+              <td class="duration" data-value="3480885700">3.480</td>
+              <td class="duration" data-value="3480885700">3.480</td>
+              <td class="duration" data-value="3480885700">3.480</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HomeScreenStepDefs.user_should_see_label_is_present(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="231780450">0.231</td>
+              <td class="duration" data-value="231780450">0.291</td>
+              <td class="duration" data-value="463560900">0.463</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HomeScreenStepDefs.user_should_see_search_bar()</td>
+              <td>1</td>
+              <td class="duration" data-value="89331500">0.089</td>
+              <td class="duration" data-value="89331500">0.089</td>
+              <td class="duration" data-value="89331500">0.089</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hooks.startUp()</td>
+              <td>1</td>
+              <td class="duration" data-value="31056414300">31.056</td>
+              <td class="duration" data-value="31056414300">31.056</td>
+              <td class="duration" data-value="31056414300">31.056</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">Hooks.tearDown()</td>
+              <td>1</td>
+              <td class="duration" data-value="581962300">0.581</td>
+              <td class="duration" data-value="581962300">0.581</td>
+              <td class="duration" data-value="581962300">0.581</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">LandingScreenStepDefs.user_clicks_on_get_started_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="772842700">0.772</td>
+              <td class="duration" data-value="772842700">0.772</td>
+              <td class="duration" data-value="772842700">0.772</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">LeagueDetailsScreenStepDefs$StandingsScreenStepDefs.user_clicks_back_button_from_standings()</td>
+              <td>1</td>
+              <td class="duration" data-value="1498958800">1.498</td>
+              <td class="duration" data-value="1498958800">1.498</td>
+              <td class="duration" data-value="1498958800">1.498</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">LeagueDetailsScreenStepDefs$StandingsScreenStepDefs.user_should_see_that_standings_tab_is_selected()</td>
+              <td>1</td>
+              <td class="duration" data-value="334433000">0.334</td>
+              <td class="duration" data-value="334433000">0.334</td>
+              <td class="duration" data-value="334433000">0.334</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">LeagueDetailsScreenStepDefs$StandingsScreenStepDefs.user_should_see_that_team_standings_is_displayed(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="111154600">0.111</td>
+              <td class="duration" data-value="111154600">0.111</td>
+              <td class="duration" data-value="111154600">0.111</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">LeagueDetailsScreenStepDefs.user_clicks_on_standings_tab()</td>
+              <td>1</td>
+              <td class="duration" data-value="2294550400">2.294</td>
+              <td class="duration" data-value="2294550400">2.294</td>
+              <td class="duration" data-value="2294550400">2.294</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">LeagueDetailsScreenStepDefs.user_should_see_title_as_expected(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1568820900">1.568</td>
+              <td class="duration" data-value="1568820900">1.568</td>
+              <td class="duration" data-value="1568820900">1.568</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td class="duration">2.689</td>
+            <td class="duration">31.056</td>
+            <td class="duration">51.104</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

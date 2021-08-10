@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="| NHL Hockey |  | Montreal Canadiens |  | NHL |" tests="18" skipped="0" failures="0" errors="0" timestamp="2021-08-10T15:08:30" hostname="LAPTOP-6GFP295O" time="19.335">
+  <properties/>
+  <testcase name="When User clicks on get started button" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.001"/>
+  <testcase name="Then Verify that league &quot;NHL Hockey&quot; is displayed" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.001"/>
+  <testcase name="And User clicks on &quot;NHL Hockey&quot; league" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="And User clicks on continue" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="And Verify that team &quot;Montreal Canadiens&quot; is displayed" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="Then User clicks on &quot;Montreal Canadiens&quot; team" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="And User clicks on continue on choose team" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="Then User should be on favourites tab on home screen" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="And User should see label &quot;NHL&quot; is present" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="And User clicks on &quot;NHL&quot; label" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="And User should see title &quot;NHL Hockey&quot; as expected" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="Then User clicks on standings tab" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="And User should see that standings tab is selected" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="And User should see that team &quot;Montreal Canadiens&quot; standings is displayed" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="Then User clicks back button from standings" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.001"/>
+  <testcase name="And User should see label &quot;NHL&quot; is present" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="And User should see search bar" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="0.0"/>
+  <testcase name="classMethod" classname="| NHL Hockey |  | Montreal Canadiens |  | NHL |" time="51.243"/>
+  <system-out><![CDATA[Selected Platform ==> Android
+]]></system-out>
+  <system-err><![CDATA[Aug 10, 2021 11:08:28 AM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

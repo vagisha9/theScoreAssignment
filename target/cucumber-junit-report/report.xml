@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="51.104492">
+<testcase classname="Verify selection of league,team and verify details screen" name="User chooses a league and verify league details" time="51.104492">
+<system-out><![CDATA[When User clicks on get started button......................................passed
+Then Verify that league "NHL Hockey" is displayed...........................passed
+And User clicks on "NHL Hockey" league......................................passed
+And User clicks on continue.................................................passed
+And Verify that team "Montreal Canadiens" is displayed......................passed
+Then User clicks on "Montreal Canadiens" team...............................passed
+And User clicks on continue on choose team..................................passed
+Then User should be on favourites tab on home screen........................passed
+And User should see label "NHL" is present..................................passed
+And User clicks on "NHL" label..............................................passed
+And User should see title "NHL Hockey" as expected..........................passed
+Then User clicks on standings tab...........................................passed
+And User should see that standings tab is selected..........................passed
+And User should see that team "Montreal Canadiens" standings is displayed...passed
+Then User clicks back button from standings.................................passed
+And User should see label "NHL" is present..................................passed
+And User should see search bar..............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

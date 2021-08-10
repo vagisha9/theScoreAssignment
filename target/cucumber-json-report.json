@@ -1,0 +1,338 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User clicks on Get started",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 772842700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User clicks on get started button",
+            "match": {
+              "location": "LandingScreenStepDefs.user_clicks_on_get_started_button()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 31056414300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.startUp()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "User chooses a league and verify league details",
+        "description": "",
+        "id": "verify-selection-of-league,team-and-verify-details-screen;user-chooses-a-league-and-verify-league-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 581962300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2183408100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify that league \"NHL Hockey\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NHL Hockey",
+                  "offset": 20
+                }
+              ],
+              "location": "ChooseLeagueScreenStepDefs.verify_league_is_displayed(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 460057000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on \"NHL Hockey\" league",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NHL Hockey",
+                  "offset": 16
+                }
+              ],
+              "location": "ChooseLeagueScreenStepDefs.user_clicks_on_league(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2695635300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on continue",
+            "match": {
+              "location": "ChooseLeagueScreenStepDefs.user_clicks_on_continue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 310266700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify that team \"Montreal Canadiens\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Montreal Canadiens",
+                  "offset": 18
+                }
+              ],
+              "location": "ChooseTeamScreenStepDefs.verify_team_is_displayed(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 356264900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on \"Montreal Canadiens\" team",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Montreal Canadiens",
+                  "offset": 16
+                }
+              ],
+              "location": "ChooseTeamScreenStepDefs.user_clicks_on_team(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2529465300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User clicks on continue on choose team",
+            "match": {
+              "location": "ChooseTeamScreenStepDefs.user_clicks_on_continue_on_choose_team()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3480885700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User should be on favourites tab on home screen",
+            "match": {
+              "location": "HomeScreenStepDefs.user_should_be_on_favourites_tab_n_home_screen()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 291409000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User should see label \"NHL\" is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NHL",
+                  "offset": 23
+                }
+              ],
+              "location": "HomeScreenStepDefs.user_should_see_label_is_present(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 316480000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks on \"NHL\" label",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NHL",
+                  "offset": 16
+                }
+              ],
+              "location": "HomeScreenStepDefs.user_clicks_on_label(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1568820900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should see title \"NHL Hockey\" as expected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NHL Hockey",
+                  "offset": 23
+                }
+              ],
+              "location": "LeagueDetailsScreenStepDefs.user_should_see_title_as_expected(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2294550400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User clicks on standings tab",
+            "match": {
+              "location": "LeagueDetailsScreenStepDefs.user_clicks_on_standings_tab()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 334433000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User should see that standings tab is selected",
+            "match": {
+              "location": "LeagueDetailsScreenStepDefs$StandingsScreenStepDefs.user_should_see_that_standings_tab_is_selected()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111154600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User should see that team \"Montreal Canadiens\" standings is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Montreal Canadiens",
+                  "offset": 27
+                }
+              ],
+              "location": "LeagueDetailsScreenStepDefs$StandingsScreenStepDefs.user_should_see_that_team_standings_is_displayed(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1498958800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User clicks back button from standings",
+            "match": {
+              "location": "LeagueDetailsScreenStepDefs$StandingsScreenStepDefs.user_clicks_back_button_from_standings()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 172151900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User should see label \"NHL\" is present",
+            "match": {
+              "arguments": [
+                {
+                  "val": "NHL",
+                  "offset": 23
+                }
+              ],
+              "location": "HomeScreenStepDefs.user_should_see_label_is_present(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89331500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User should see search bar",
+            "match": {
+              "location": "HomeScreenStepDefs.user_should_see_search_bar()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify selection of league,team and verify details screen",
+    "description": "",
+    "id": "verify-selection-of-league,team-and-verify-details-screen",
+    "keyword": "Feature",
+    "uri": "LeagueTest.feature"
+  }
+]
